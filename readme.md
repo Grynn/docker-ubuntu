@@ -13,7 +13,7 @@ nginx apache2 php5 php-fpm git vim mysql nodejs downloaded/cached but not instal
 
 ### Pull & Run
 
-[https://registry.hub.docker.com/u/grynn/ubuntu/](Docker Hub)
+Via [Docker Hub](https://registry.hub.docker.com/u/grynn/ubuntu/)
 
     docker pull grynn/ubuntu
     docker run -it grynn/ubuntu bash
