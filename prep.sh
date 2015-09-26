@@ -19,7 +19,7 @@ apt-get install -qy software-properties-common
 # Fix locale
 locale-gen en_US en_US.UTF-8
 dpkg-reconfigure locales
-update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+update-locale --reset LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 
 # Add PPAs
@@ -30,7 +30,7 @@ done
 
 # Add NodeSource (was Chris-Lea nodejs ppa)
 apt-get install -y curl
-curl -sL https://deb.nodesource.com/setup | bash -
+curl -sL https://deb.nodesource.com/setup_4.x | bash -
 
 #Pre-download (cache) useful packages
 #NOTE ** PREVIOUS STEP (nodesource) runs apt-get update, so we wont do it again **
