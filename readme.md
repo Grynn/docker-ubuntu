@@ -1,9 +1,11 @@
+[![Docker Build Status](https://img.shields.io/docker/build/grynn/ubuntu.svg?style=flat-square)](https://hub.docker.com/r/grynn/ubuntu/builds/)
+
 ## A general purpose Ubuntu (trusty) base image
 
 Ubuntu Trusty + locale's fixed up and a few useful PPAs
-like ondrej/php5-5.6 webupd8team/java (oracle java installer), git-core, nodesource
+like ondrej/php webupd8team/java (oracle java installer), git-core, nodesource
 
-nginx apache2 php5 php-fpm git vim mysql nodejs downloaded/cached but not installed
+nginx apache2 php7 php-fpm git vim mysql nodejs downloaded/cached but not installed
  
 ### Build
 
