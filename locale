@@ -1,0 +1,8 @@
+# Hand generated; to use Ubuntu tools
+# apt install locales
+# locale-gen locale-gen en_US.*
+# update-locale --reset LANG=en_US.UTF-8 LC_MESSAGES=POSIX LC_ALL=en_US.UTF-8
+
+LC_MESSAGES=POSIX
+LC_ALL=C.UTF-8
+LANG=C.UTF-8
