@@ -1,6 +1,8 @@
 .PHONY: all
 
-TAG?=grynn/bionic:in
+TAG ?= grynn/ubuntu:bionic-in
+LATEST := $(shell echo $(TAG) | sed -e 's/:.*/:latest/')
+
 
 build-timestamp: Dockerfile locale
 	docker build . -t ${TAG}
@@ -8,7 +10,9 @@ build-timestamp: Dockerfile locale
 	echo date >> build-timestamp
 
 push: 
+	docker tag ${TAG} ${LATEST}
 	docker push ${TAG}
+	docker push ${LATEST}
 
 all: build-timestamp push
 	@echo "Done"
